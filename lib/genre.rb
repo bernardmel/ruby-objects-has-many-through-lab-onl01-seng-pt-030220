@@ -1,6 +1,6 @@
 class Genre
 
-  attr_accessor :name
+  attr_accessor :name, :song, :artist
 
   @@all = []
 
@@ -13,7 +13,11 @@ class Genre
     Song.all.select {|song| song.genre == self}
   end
 
-  def self.all 
+  def self.all
     @@all
+  end
+
+  def artist
+    songs.collect {|song| song.artist}
   end
 end
