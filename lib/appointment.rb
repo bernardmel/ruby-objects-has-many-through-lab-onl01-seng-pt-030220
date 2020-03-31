@@ -1,6 +1,6 @@
 class Appointment
 
-  attr_reader :patient, :date, :doctor
+  attr_accessor :patient, :date, :doctor
 
   @@all = []
 
@@ -13,14 +13,6 @@ class Appointment
 
   def self.all
     @@all
-  end
-
-  def patients 
-    self.patient
-  end
-
-  def doctors
-    self.doctor
   end
 
 end
