@@ -13,5 +13,7 @@ class Artist
     @@all
   end
 
+  def song
+
 
 end
